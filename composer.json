@@ -1,0 +1,33 @@
+{
+  "name": "davidribeiro05/unidom-academy",
+  "description": "Site desenvolvido para cumprir a atividade de desenvolvimento para web",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "David",
+      "email": "david.ribeiro05@gmail.com",
+      "homepage": "https://www.linkedin.com/in/davidribeiro05/",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^7.4",
+    "ext-pdo": "^7.1",
+    "league/plates": "v4.0.0-alpha",
+    "coffeecode/router": "^1.0.7",
+    "ext-mbstring": "*"
+  }
+}
