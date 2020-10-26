@@ -1,0 +1,385 @@
+.first_nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 2% 0 2% 0;
+}
+
+.logo_img {
+    flex-basis: 50%;
+    margin: 0 auto;
+}
+
+.logo_img img {
+    margin-left: 85%;
+}
+
+.btn-back {
+    flex-basis: 50%;
+    margin: 0 auto;
+}
+
+.btn-back img {
+    margin-left: 83%;
+}
+
+/* BANNER */
+.presentation {
+    display: flex;
+    overflow: hidden;
+}
+
+.banner {
+    flex-basis: 50%;
+}
+
+.banner img {
+    border-radius: 0px 10px 10px 0;
+}
+
+.presentation_text {
+    display: flex;
+    flex-flow: column;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.presentation_text_title {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 108px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0056B3;
+}
+
+.presentation_text_subtitle {
+    line-height: 24px;
+    color: #808080;
+    display: flex;
+}
+
+.highlight_text {
+    color: #4D4D4D;
+}
+
+.presentation_separator {
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    padding-right: 2%;
+}
+
+.call_to_action a {
+    margin: 10% 60%;
+}
+
+.call_to_action img {
+    margin-left: 100%;
+}
+
+@media (max-width: 900px) {
+    .presentation {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .banner img {
+        border-radius: 0px 0px 0px 0;
+    }
+
+    .presentation_text_title {
+        margin-top: 5%;
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 72px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #0056B3;
+    }
+
+    .presentation_separator {
+        display: none;
+    }
+
+    .presentation_text_subtitle {
+        display: flex;
+        justify-content: center;
+    }
+
+    .call_to_action a {
+        margin: 5% auto;
+    }
+
+}
+
+/** FOOTER */
+
+.footer {
+    display: flex;
+    padding: 3rem 3rem;
+    font-size: 0.8rem;
+    color: #666666;
+    align-items: flex-start;
+    background-color: #F8F8F8;
+}
+
+.adrress {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 2%;
+}
+
+.adrress p {
+    line-height: 1.2rem;
+}
+
+.section_contact {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 5%;
+    align-items: flex-start;
+}
+
+.contact {
+    display: -webkit-box;
+}
+
+.contact p {
+    width: 100%;
+    margin-left: 5%;
+}
+
+.contact:last-child {
+    margin-top: 5%;
+}
+
+.developer {
+    margin-left: 30%;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .adrress, .section_contact {
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    .developer {
+        margin: 15% 0 0 5%;
+    }
+}
+
+/**SYSTEM MENU*/
+.card_menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0 2em 0;
+}
+
+.card {
+    width: 19rem;
+    height: 19rem;
+    border: 2px solid #303030;
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    transition: 1s;
+}
+
+.card:hover {
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.card_icon {
+    margin: 0 auto;
+}
+
+.card_text {
+    text-align: center;
+    margin: 1rem 0 0rem 0;
+}
+
+@media (max-width: 950px) {
+    .card_menu {
+        display: flex;
+        flex-flow: column wrap;
+        margin: 3rem 0 2em 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .card {
+        width: 19rem;
+        height: 19rem;
+        border: 2px solid #303030;
+        border-radius: 10px;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .card:nth-child(2), .card:nth-child(3) {
+        margin-top: 2%;
+    }
+}
+
+/** PROFILE */
+
+.profile_img {
+    display: flex;
+    justify-content: center;
+}
+
+.profile_img img {
+    width: 11.875rem;
+    height: 11.875rem;
+    border: 2px solid black;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.profile_texts {
+    text-align: center;
+    padding: 3rem;
+}
+
+.profile_texts h1 {
+    font-weight: normal;
+    font-size: 4.5rem;
+}
+
+.profile_texts h2 {
+    font-weight: normal;
+    font-size: 2.25rem;
+    color: #666666;
+}
+
+.profile_cta {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+    .profile_cta {
+        width: 100%;
+    }
+}
+
+.profile_cta h4 {
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: #666666;
+    transition: .10s linear;
+}
+
+.border_bottom_active {
+    border-bottom: 3px solid #0056B3;
+    max-width: 100%;
+    cursor: pointer;
+}
+.border_bottom:hover {
+    border-bottom: 3px solid #0056B3;
+    max-width: 100%;
+    cursor: pointer;
+    transition: .10s linear;
+}
+
+.profile_cta_text {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.profile_cta_text p {
+    background: #C4C4C4;
+    width: 25.875rem;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2.5% 0 2.5% 0;
+}
+
+.profile_cta_social_icons {
+    display: flex;
+    width: 7rem;
+    justify-content: space-evenly;
+}
+
+.profile_cta_contact_icons {
+    display: flex;
+    width: 7rem;
+    justify-content: space-evenly;
+}
+
+/**REGISTER */
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 27rem;
+    margin: 0 auto;
+    padding: 0.3rem;
+}
+
+.form:nth-last-child(1){
+    justify-content: flex-end;
+}
+
+.input {
+    position: relative;
+    width: 11.9375rem;
+    height: 2.5rem;
+}
+
+.input label {
+    position: absolute;
+    margin: 0.875rem 0 0 0.4rem;
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+
+.input input, .input select {
+    background: #FAFAFA;
+    border: 1px solid #0056B3;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+
+/** TABLE */
+table {
+    display: flex;
+    justify-content: center;
+
+}
+
+th {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0.875rem;
+    text-align: center;
+    font-size: .875rem;
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+    padding: .875rem;
+    font-size: .875rem;
+    font-weight: normal;
+}
+
