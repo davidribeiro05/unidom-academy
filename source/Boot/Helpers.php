@@ -86,8 +86,8 @@ function theme(string $path = null, string $theme = CONF_VIEW_THEME): string
  * ###############
  */
 
-function date_fmt(string $dateFromFormat)
+function date_fmt(string $date, string $typeOfFormat = "Y-m-d")
 {
-    $date = new DateTime($dateFromFormat);
-    return $date->format('Y-m-d');
+    $date = new DateTime($date);
+    return $date->format($typeOfFormat);
 }

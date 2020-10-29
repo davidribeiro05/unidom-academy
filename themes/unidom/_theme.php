@@ -72,7 +72,7 @@
             </div>
         </div>
     </footer>
-<? endif; ?>
+<?php endif; ?>
 
 <script src="<?= theme("/assets/js/scripts.js"); ?>"></script>
 

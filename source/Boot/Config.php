@@ -4,7 +4,7 @@
  */
 define("CONF_DB_HOST", "127.0.0.1");
 define("CONF_DB_USER", "root");
-define("CONF_DB_PASS", "");
+define("CONF_DB_PASS", "d4v1d.3238");
 define("CONF_DB_NAME", "school");
 
 /**
